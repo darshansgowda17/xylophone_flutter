@@ -5,6 +5,10 @@ void main() {
   runApp(const MyApp());
 }
 
+void buildKey() {
+
+}
+
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
@@ -52,62 +56,62 @@ class _MyAppState extends State<MyApp> {
               ),
             ),
             ),
-        Expanded(child: GestureDetector(
-          onTap: (){
-            setState(() {
-              audioNumber=3;
-            });
-            audio.play();
-          },
-          child: Container(
-        color: Colors.blue,
-        ),
-        ),),
-        Expanded(child: GestureDetector(
-          onTap: (){
-            setState(() {
-              audioNumber=4;
-            });
-            audio.play();
-          },
-          child: Container(
-        color: Colors.green,
-        ),
-        ),),
-        Expanded(child: GestureDetector(
-          onTap: (){
-            setState(() {
-              audioNumber=5;
-            });
-            audio.play();
-          },
-          child: Container(
-        color: Colors.yellow,
-        ),
-        ),),
-        Expanded(child: GestureDetector(
-          onTap: (){
-            setState(() {
-              audioNumber=6;
-            });
-            audio.play();
-          },
-          child: Container(
-        color: Colors.orange,
-        ),
+            Expanded(child: GestureDetector(
+              onTap: (){
+                setState(() {
+                  audioNumber=3;
+                });
+                audio.play();
+              },
+              child: Container(
+                color: Colors.blue,
+                ),
+              ),),
+            Expanded(child: GestureDetector(
+              onTap: (){
+                setState(() {
+                  audioNumber=4;
+                });
+                audio.play();
+              },
+              child: Container(
+                color: Colors.green,
               ),
-              Expanded(child: GestureDetector(
-                onTap: (){
-                  setState(() {
-                    audioNumber=7;
-                  });
-                  audio.play();
-                },child: Container(
-                color: Colors.red,
+            ),),
+            Expanded(child: GestureDetector(
+              onTap: (){
+                setState(() {
+                 audioNumber=5;
+                });
+                audio.play();
+                },
+              child: Container(
+                color: Colors.yellow,
+              ),
+            ),),
+            Expanded(child: GestureDetector(
+              onTap: (){
+                setState(() {
+                  audioNumber=6;
+                });
+                audio.play();
+              },
+              child: Container(
+                color: Colors.orange,
               ),
               ),),
-          
-            ],
+            Expanded(child: GestureDetector(
+              onTap: (){
+                setState(() {
+                  audioNumber=7;
+                });
+                audio.play();
+              },
+              child: Container(
+                color: Colors.red,
+                ),
+                ),),
+              ],
               ),
           ),
         ),
